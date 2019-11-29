@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Home · Töötter</title>
+
+  <script defer src="/node_modules/feather-icons/dist/feather.min.js"></script>
+  <script defer src="/toot.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css"
+    integrity="sha256-N6+kUxTWxpqVK+BrPWt3t4jeOWPtp37RZEbm5n9X+8U=" crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <div class="layout">
+    <nav class="layout__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item--current">
+          <a href="/"><span class="nav__icon" aria-hidden="true" data-feather="home">🏠</span><span
+              class="nav__text">Home</span></a>
+        </li>
+        <li>
+          <a href="/"><span class="nav__icon" aria-hidden="true" data-feather="hash">#️⃣</span><span
+              class="nav__text">Explore</span></a>
+        </li>
+        <li>
+          <a href="/"><span class="nav__icon" aria-hidden="true" data-feather="bell">🔔</span><span
+              class="nav__text">Notifications</span></a>
+        </li>
+        <li>
+          <a href="/"><span class="nav__icon" aria-hidden="true" data-feather="mail">✉️</span><span
+              class="nav__text">Messages</span></a>
+        </li>
+      </ul>
+    </nav>
+    <main class="layout__main">
+      <h1 class="sr-only">Home</h1>
+      <section class="send-a-toot">
+        <h2>Send a tööt</h2>
+        <form id="form">
+          <label class="sr-only" for="toot">Your toot</label>
+          <textarea id="toot" name="toot"></textarea>
+          <button class="button" type="submit">Tööt</button>
+        </form>
+      </section>
+      <section class="toot-feed">
+        <h2 class="sr-only">Tööt Feed</h2>
+        <ul class="toot-feed__list" id="feed">
+          <li>
+            <article class="toot">
+              <h3>
+                <span class="sr-only">Tööt by </span>Simo <span class="toot__username">@nurmisimo</span>
+              </h3>
+              <p class="toot__message">Lorem ipsum dolor sit amet <a href="#">#blessed</a></p>
+              <footer class="toot__footer">
+                <button class="button--like" type="button">
+                  <span aria-hidden="true" data-feather="heart">❤️</span>
+                  <span class="sr-only">Like</span>
+                </button>
+                <p class="toot__likes"><span>0</span><span class="sr-only"> likes</span></p>
+              </footer>
+            </article>
+          </li>
+          <li>
+            <article class="toot">
+              <h3>
+                <span class="sr-only">Tööt by </span>Lady Gaga<span class="toot__verified" aria-label="Verified"
+                  data-feather="check-circle">✅</span><span class="toot__username">@ladygaga</span>
+              </h3>
+              <p class="toot__message">What's fortnight</p>
+              <footer class="toot__footer">
+                <button class="button--liked" type="button">
+                  <span aria-hidden="true" data-feather="heart">❤️</span>
+                  <span class="sr-only">Like</span>
+                </button>
+                <p class="toot__likes toot__likes--liked"><span>1M</span><span class="sr-only"> likes</span></p>
+              </footer>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <aside class="layout__aside">
+      <section class="trends">
+        <h2>Worldwide Trends</h2>
+        <ol class="trends__list">
+          <li>
+            <a href="#">#joulujuhla</a>
+          </li>
+          <li>
+            <a href="#">#ananas</a>
+          </li>
+          <li>
+            <a href="#">#vihreatkuulat</a>
+          </li>
+          <li>
+            <a href="#">#tilli</a>
+          </li>
+          <li>
+            <a href="#">#heijastin</a>
+          </li>
+        </ol>
+      </section>
+    </aside>
+  </div>
+</body>
+
+</html>
